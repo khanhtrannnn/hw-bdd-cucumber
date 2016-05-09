@@ -19,7 +19,7 @@ Then(/^I should see "(.*?)" before "(.*?)"$/)  do |e1, e2|
 end
 
 Then /I should see all of the movies/ do
-  page.should have_css("table#movies tbody tr",:count => num.to_i)
+  page.should have_css("table#movies tbody tr")
 end
 
 Then /I should not see all of the movies/ do
